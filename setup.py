@@ -1,7 +1,7 @@
 import os
 from setuptools import setup
 
-VERSION = "0.1"
+VERSION = "0.1.2"
 DESCRIPTION = "nose plugin for Kay framework testing"
 README = os.path.join(os.path.dirname(__file__), "README.rst")
 LONG_DESCRIPTION = open(README).read() + "\n\n"
@@ -26,5 +26,5 @@ setup(
 		"Topic :: Software Development :: Testing",
     ],
     py_modules = ["nosekay"],
-    install_required = ["nose>=0.10.1"],
+    install_requires = ["nose>=0.10.1"],
 )
