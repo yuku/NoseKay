@@ -23,6 +23,6 @@ Usage::
     $ cd /path/to/your/app
     $ nosetests --with-kay [app]
 
-or::
+You can use --kay-app-dir to specify your application directory.::
 
-    $ nosetest --with-kay --kay-app-dir /path/to/your/app [app]
+    $ nosetests --with-kay --kay-app-dir /path/to/your/app [app]
