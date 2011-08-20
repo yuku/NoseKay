@@ -2,8 +2,7 @@
 KayNose
 #######
 
-nose plugin for `Kay framework<http://code.google.com/p/kay-framework/>`_
-testing.
+nose plugin for `Kay framework <http://code.google.com/p/kay-framework/>`_ testing.
 
 Basic Usage
 ***********
