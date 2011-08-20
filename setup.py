@@ -1,20 +1,10 @@
+import os
 from setuptools import setup
 
 VERSION = "0.0.1"
-
 DESCRIPTION = "nose plugin for Kay framework testing"
-
-LONG_DESCRIPTION = """
-
-Usage::
-
-    $ cd /path/to/your/app
-    $ nosetests --with-kay [app]
-
-or::
-
-    $ nosetest --with-kay --kay-app-dir /path/to/your/app [app]
-"""
+README = os.path.join(os.path.dirname(__file__), "README.rst")
+LONG_DESCRIPTION = open(README).read() + "\n\n"
 
 setup(
     name = "NoseKay",
@@ -27,6 +17,7 @@ setup(
     entry_points = {
         "nose.plugins.0.10": ["nosekay = nosekay:NoseKay"]
     },
+    keywords="nose kay-framework",
     classifiers = [
         "Development Status :: 3 - Alpha",
         "License :: OSI Approved :: BSD License",
