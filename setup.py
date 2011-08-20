@@ -22,7 +22,7 @@ setup(
     author = "Yuku Takahashi",
     author_email = "taka84u9@gmail.com",
     description = DESCRIPTION,
-    long_description = LONG_DESCRIPTION
+    long_description = LONG_DESCRIPTION,
     license = "BSD",
     entry_points = {
         "nose.plugins.0.10": ["nosekay = nosekay:NoseKay"]
