@@ -20,9 +20,14 @@ Basic Usage
 
 Usage::
 
-    $ cd /path/to/your/app
-    $ nosetests --with-kay [app]
+    $ cd /path/to/your/project/dir
+    $ nosetests --with-kay [module]
 
-You can use --kay-app-dir to specify your application directory.::
+You can use **--kay-app-dir** to specify the location of your project directory::
 
-    $ nosetests --with-kay --kay-app-dir /path/to/your/app [app]
+    $ nosetests --with-kay --kay-app-dir /path/to/your/project/dir [module]
+
+If you don't designate kay app module (at [module] position described in above), nose will find and execute all test cases in kay framework and other third party libraries installed in your project.
+So, for example if you want to test the app named *core*, call nosetests command as follows::
+
+    $ nosetests --with-kay core
